@@ -73,15 +73,17 @@ h1, h2, h3, h4, h5 {
 }
 
 .nav_menu{
-	display:flex;
-	justify-content:space-between;
-	padding: 20px;
+		display:flex;
+		justify-content: space-between;
+		padding:20px 0 20px;
 }
 
-.nav_menu a{
+.nav_menu div a{
+	justify-content: space-between;
 	text-decoration: none;
 	background-color:white;
 	color:grey;
+	margin: 0 20px 0;
 }
 
 .top{
@@ -139,3 +141,28 @@ footer{
 	width:100%;
 }
 
+@media(max-width: 800px){
+
+	.container{
+		width: 800px;
+	margin: 0 auto;
+	}
+	.nav_menu{
+		flex-direction: column-reverse;
+		text-align: center;
+		padding: 4%;
+	}
+	.nav_menu div{
+		padding: 2%;
+	}
+	.top-content, .middle-img, .bottom-content, .contact{
+		padding: 3%;
+	}
+
+	.image{
+		display: none;
+	}
+	.nav_menu{
+		padding:1%;
+	}
+}
