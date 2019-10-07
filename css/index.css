@@ -91,7 +91,7 @@ h1, h2, h3, h4, h5 {
 	justify-content: center;
 	padding:2%;
 	align-content: center;
-	border-bottom: 1px solid black;
+	
 }
 
 h1{
@@ -117,6 +117,7 @@ h1{
 	display:flex;
 	justify-content: space-between;
 	padding: 20px 0 20px 0;
+	
 }
 
 .bottom-content{
@@ -164,5 +165,36 @@ footer{
 	}
 	.nav_menu{
 		padding:1%;
+	}
+}
+
+@media(max-width: 500px){
+
+	.links{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+	}
+
+	.links a{
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		font-size: 200%;
+		padding:2%;
+	}
+
+	.top-content{
+		flex-direction: column;
+	}
+	.text-container{
+		margin: 2% auto;
+	}
+
+	.bottom-content{
+		flex-direction: column;
+	}
+	.contact{
+		margin: 0 20%;
 	}
 }
